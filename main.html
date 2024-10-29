@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Singh - Personal Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: linear-gradient(to right, #e66465, #9198e5, #ffbc00, #6a7ff7,#ff1493);
+            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; 
+            overflow: hidden; 
+        }
+        .container {
+            max-width: 1000px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+            position: relative; 
+            z-index: 1;
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            height: 80%; 
+        }
+        .side-design {
+            position: absolute;
+            top: 0;
+            width: 50%; 
+            height: 100%;
+            z-index: 0; 
+        }
+        .left-side {
+            left: -50%; 
+            background: linear-gradient(to right, #ff7e67, #40e0d0, #ff2e63, #ffbc00,);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0.8; 
+            font-size: 60px; 
+            color: #fff; 
+        }
+        .right-side {
+            right: -50%; /* Position right of the container */
+            background: linear-gradient(to right, #6a7ff7, #3a4fe1, #4A90E2); /* Blue tones with lighter blue */
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0.8; /* Slight transparency */
+            font-size: 60px; /* Large size for icons */
+            color: #fff; /* Icon color */
+        }
+        img {
+            width: 150px; /* Smaller image */
+            height: 150px; /* Smaller image */
+            border-radius: 50%;
+            margin-bottom: 20px; /* Space below image */
+            border: 4px solid #fff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+        a {
+            margin: 10px;
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.3s;
+        }
+        a:hover {
+            color: #0056b3;
+            transform: scale(1.05);
+        }
+        .about {
+            display: flex;
+            align-items: center;
+            background-color: #f9f9f9;
+            border-radius: 12px;
+            padding: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            margin-bottom: 20px;
+            width: 100%; /* Full width */
+        }
+        .about-text {
+            text-align: left;
+        }
+        h1 {
+            font-size: 2.2em; 
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #4A90E2;
+            margin-bottom: 15px;
+        }
+        p {
+            line-height: 1.4; /* Adjusted line spacing */
+            margin: 5px 0; /* Reduced margin */
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>YASH SINGH</h1>
+        </header>
+        <section class="about">
+            <img src= "profile.jpg">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>
+                    Hi! I'm <strong style="color: #4A90E2;">Yash Singh</strong>, currently in my second year of studying Computer Science at the Krishna Institution of Engineering and Technology.
+                </p>
+                <p>
+                    I enjoy playing chess and reading light fiction.
+                </p>
+                <p>
+                    I’m excited about my studies and exploring new opportunities in tech!
+                </p>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Connect with Me</h2>
+            <a href="https://www.linkedin.com/in/yash-singh-632014278/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/yourprofile" target="_blank">GitHub</a>
+        </section>
+
+        <footer>
+           2024 Yash Singh. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>
